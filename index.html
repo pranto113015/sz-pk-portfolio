@@ -1,111 +1,293 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Pranto Kumar</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
 
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <!-- Remix Icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
-
-
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header id="navbar" class="sticky top-0 z-50 duration-300">
-        <nav class="relative container flex justify-between items-center">
-            <section class="py-5">
-                <img src="./image/favicon.png" alt="logo" class="w-10">
-            </section>
-            <section id="nav-menu" class="absolute top-0 left-0 bg-blue-500 w-full py-24 ">
-                <ul class="flex flex-col items-center text-center gap-8">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><button>
-                            <span>
-                                Hire Me
-                            </span>
-                        </button>
-                    </li>
-                </ul>
+    <!-- Navbar Section -->
+    <header class="fixed top-0 left-0 right-0 z-10 text-white">
+        <nav class="flex justify-between items-center my-container h-24 ">
+            <!-- logo -->
+            <a href="#" class="logo text-3xl font-bold">Pranto</a>
 
-                <section id="nav-close">
-                    <i class="ri-close-line"></i>
-                </section>
+            <!-- desktop menu -->
+            <ul class="md:flex items-center gap-14 hidden">
+                <li><a href="#home" class="uppercase text-[13px]">Home</a></li>
+                <li><a href="#about" class="uppercase text-[13px]">About</a></li>
+                <li><a href="#whatido" class="uppercase text-[13px]">What I Do</a></li>
+                <li><a href="#works" class="uppercase text-[13px]">works</a></li>
+                <li><a href="#blog" class="uppercase text-[13px]">Blog</a></li>
+                <li><a href="#contact" class="uppercase text-[13px]">Contact</a></li>
+            </ul>
 
+            <!-- Hamburger Icon -->
+            <a href="#" class="text-2xl md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a>
 
-                <section>
-                    <i class="ri-moon-line" id="theme-toggle"></i>
-
-                    <section>
-                        <i class="ri-menu-2-line" id="nav-toggle"></i>
-                    </section>
-
-                </section>
-
-            </section>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
+        <section class="flex items-center justify-center bg-[url(/image/hero-bg.jpg)] h-screen bg-center bg-cover">
+            <section class="my-container">
+                <h1 class="text-7xl md:text-8xl text-white font-semibold tracking-tighter h-30">Developer</h1>
+
+                <!-- social links -->
+                <ul class="flex items-center justify-center gap-5">
+                    </li><a href="#" class="text-white text-xl hover:text-gray-300"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a href="#" class="text-white text-xl hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="#" class="text-white text-xl hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </section>
+        </section>
 
 
-        <!-- My Quality Section -->
+        <!-- About section -->
+        <section>
+            <section class="my-container sections-pb flex md:flex-row flex-col items-center gap-10">
+                <img src="./image/Pranto Kumar.jpg" alt="about_image" class="w-full md:w-1/3" />
+
+                <section>
+                    <h2 class="text-neutral-800 text-4xl/12 md:text-5xl md:max-w-xl">Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Vitae, veniam.</h2>
+
+                    <p class="text-gray-500 mt-8 mb-15 text-sm/7 md:text-base/9">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam, voluptatum.</p>
+
+                    <a href="#"
+                        class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Download
+                        Resume</a>
+
+                </section>
+            </section>
+        </section>
+
+        <!-- What I Do Section -->
+        <section class="bg-gray-100">
+            <section class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">What I Do</h3>
+
+                <section class="flex mt-10 gap-14 md:flex-row flex-col">
+                    <section>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">UI/UX Design
+                        </h5>
+                        <p class="text-gray-400 text-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem doloribus porro unde nihil
+                            provident! Nisi.
+                        </p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-wand-magic-sparkles text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">Web
+                            Development</h5>
+                        <p class="text-gray-400 text-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem doloribus porro unde nihil
+                            provident! Nisi.
+                        </p>
+                    </section>
+
+                    <section>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">UI/UX Design
+                        </h5>
+                        <p class="text-gray-400 text-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem doloribus porro unde nihil
+                            provident! Nisi.
+                        </p>
+                    </section>
+                </section>
 
 
-        <!-- My Recent Works Section -->
+                <section class="flex mt-10 gap-14 md:flex-row flex-col">
+                    <section>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">UI/UX Design
+                        </h5>
+                        <p class="text-gray-400 text-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem doloribus porro unde nihil
+                            provident! Nisi.
+                        </p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">UI/UX Design
+                        </h5>
+                        <p class="text-gray-400 text-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem doloribus porro unde nihil
+                            provident! Nisi.
+                        </p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-layer-group text-4xl text-yellow-400"></i>
+                        <h5 class="text-neutral-800 text-sm tracking-widest my-3 font-semibold uppercase">UI/UX Design
+                        </h5>
+                        <p class="text-gray-400 text-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem doloribus porro unde nihil
+                            provident! Nisi.
+                        </p>
+                    </section>
+                </section>
+            </section>
+        </section>
 
 
-        <!-- Experience Section -->
+
+        <!-- Recent Works Section -->
+        <section>
+            <section class="my-container sections-pb">
+                <h3 class="text-4xl  text-neutral-800">Recent Works</h3>
+                <section class="flex gap-14  mt-10 md:flex-row flex-col">
+                    <a href="" class="hover:-translate-y-3 transation:transform duration-300"><img
+                            src="./image/project1.jpg" alt="work_image" /></a>
+                    <a href="" class="hover:-translate-y-3 transation:transform duration-300"><img
+                            src="./image/project2.jpg" alt="work_image" /></a>
+                    <a href="" class="hover:-translate-y-3 transation:transform duration-300"><img
+                            src="./image/project3.jpg" alt="work_image" /></a>
+
+                </section>
+
+                <section class="flex gap-14  mt-10 md:flex-row flex-col">
+                    <a href="" class="hover:-translate-y-3 transation:transform duration-300"><img
+                            src="./image/project4.jpg" alt="work_image" /></a>
+                    <a href="" class="hover:-translate-y-3 transation:transform duration-300"><img
+                            src="./image/project5.jpg" alt="work_image" /></a>
+                    <a href="" class="hover:-translate-y-3 transation:transform duration-300"><img
+                            src="./image/project6.jpg" alt="work_image" /></a>
+                </section>
+            </section>
+        </section>
 
 
-        <!-- My Skills Section -->
+        <!-- Blogs Section -->
+        <section class="bg-gray-100">
+            <section class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Latest Blog Posts</h3>
+                <section class="flex md:flex-row flex-col gap-14 mt-10">
+                    <section >
+                    <img src="./image/blog1.jpg" alt="blog1_image" />
+                    <h4 class="text-xl text-neutral-800 font-semibold mt-8 uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p class="text-gray-400 text-sm /7 mt-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                 <section class="mt-10 flex justify-between items-center">
+                        <a href="#"
+                            class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read
+                            More</a>
+                        <span class="text-sm text-gray-400 ">Jan 1, 2025</span>
+                    </section>
+                </section>
+                <section>
+                    <img src="./image/blog2.jpg" alt="blog2_image" />
+                    <h4 class="text-xl text-neutral-800 font-semibold mt-8 uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                     <section class="mt-10 flex justify-between items-center">
+                        <a href="#"
+                            class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read
+                            More</a>
+                        <span class="text-sm text-gray-400 ">Jan 1, 2025</span>
+                    </section>
+                </section>
+                <section>
+                    <img src="./image/blog3.jpg" alt="blog3_image" />
+                    <h4 class="text-xl text-neutral-800 font-semibold mt-8 uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <section class="mt-10 flex justify-between items-center">
+                        <a href="#"
+                            class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Read
+                            More</a>
+                        <span class="text-sm text-gray-400 ">Jan 1, 2025</span>
+                    </section>
+                </section>
+                </section>
+
+            </section>
+
+        </section>
 
 
+        <!-- Contact section -->
+        <section >
+            <section class="my-container sections-pb">
+                <h3 class="text-4xl text-neutral-800">Contact Us</h3>
 
-        <!-- Recent Blogs Section -->
+                <form>
+                    <section class="flex mt-10 gap-10">
+                        <input type="text" name="name" placeholder="Your Name" required autocomplete="off" class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm"/>
+                        <input type="text" name="number" placeholder="Your Phone Number" required class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm"/>
 
+                    </section>
 
+                    <section class="flex mt-10 gap-10">
+                        <input type="email" name="email" placeholder="Your Email" required autocomplete="off" class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm"/>
+                        <input type="text" name="subject" placeholder="Subject" required class="field flex-1 border-b-2 border-gray-100 py-3 placeholder-gray-500 text-sm"/>
+                    </section>
 
-        <!-- Contact Section -->
+                    <section class="mt-10">
+                        <textarea name="message" placeholder="Your Message" required class="field resize-noen w-full h-32 border-b-2 border-gray-100 placeholder-gray-500 text-sm"></textarea>
+                    </section>
+
+                    <section class="mt-10">
+                        <a href="#"
+                            class="bg-yellow-400 text-sm text-neutral-800 p-3 tracking-widest hover:bg-yellow-300">Send
+                            Message</a>
+                    </section>
+
+                </form>
+            </section>
+        </section>
+
     </main>
 
+
+
     <!-- Footer Section -->
+    <footer class="bg-gray-100 ">
+        <section class="flex flex-col items-center justify-center py-15 text-center">
+            <ul class="flex gap-5">
+                <li class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration-300"><a href="#"><i class="fab fa-github"></i></a></li>
+                <li class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration-300"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li class="h-10 w-10 border-2 border-gray-200 rounded-full leading-10 hover:border-neutral-800 transition:all duration-300"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
 
-
-    <!-- Scroll Up Section -->
-
-
-    <!-- Scroll Reveal Section -->
-
-
+            <section class="mt-5">
+                <p>&copy; 2025 Pranto Kumar. All rights reserved.</p>
+            </section>
+        </section>
+    </footer>
 
     <!-- Main.js -->
     <script src="main.js"></script>

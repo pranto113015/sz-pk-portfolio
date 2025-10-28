@@ -1,0 +1,24 @@
+* {
+  font-family: "Poppins", serif;
+}
+
+/* general styles */
+.my-container {
+  max-width: 1300px;
+  padding-inline: 3rem;
+  margin: auto;
+}
+.sections-pb {
+  padding-block: 7.5rem;
+}
+
+.logo, h2, h3 {
+  font-family: "Kaushan Script", serif;
+}
+.field:focus{
+    outline: none;
+    border-bottom-color: rgb(38, 38, 38);
+}
+.field:focus::placeholder{
+color: rgb(38, 38, 38);
+}
